@@ -1,0 +1,38 @@
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Click me
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <button  (click)="hello('compose')" class="dropdown-item" type="button">Compose</button>
+      <button  (click)="hello('inbox')" class="dropdown-item" type="button">Inbox</button>
+      <button  (click)="hello('outbox')" class="dropdown-item" type="button">Outbox</button>
+    </div>
+  </div>
+
+<router-outlet></router-outlet>
+
+<div class = "content" id="compose" style="display: none">
+<!-- enter menu content here -->
+  <h1>Compose a mail here</h1>
+  
+     <input placeholder="Enter email address" type="text" name="email" size="35"><br>
+     <textarea rows="4" cols="50">
+       
+     </textarea>   
+    <input type="button" (click)="aler()"  value="Submit">
+  
+
+</div> 
+
+<div class = "content" id="inbox" style="display: none">
+  <!-- enter menu content here -->
+  
+inbox
+</div> 
+
+<div class = "content" id="outbox" style="display: none">
+
+<!-- enter menu content here -->  outbox
+</div> 
+
